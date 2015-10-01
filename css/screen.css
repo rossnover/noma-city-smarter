@@ -1,0 +1,214 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=f7181dee-e55d-40c2-b8c1-65c5e1100405");
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "TradeGothicW01-BoldCn20 675334";
+  src: url("../fonts/5fdc935e-9e30-442a-bbe9-8d887b858471.woff") format("woff");
+}
+/* line 32, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* line 36, ../sass/screen.scss */
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 42, ../sass/screen.scss */
+.large-1 {
+  width: 25%;
+}
+
+/* line 45, ../sass/screen.scss */
+.large-2 {
+  width: 50%;
+}
+
+/* line 48, ../sass/screen.scss */
+.large-3 {
+  width: 75%;
+}
+
+/* line 51, ../sass/screen.scss */
+.large-4 {
+  width: 100%;
+}
+
+/* line 54, ../sass/screen.scss */
+.specialblock {
+  height: 300px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 59, ../sass/screen.scss */
+.block {
+  position: relative;
+  height: 300px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  padding: 30px 3%;
+}
+/* line 66, ../sass/screen.scss */
+.block.green {
+  background-color: #8cc24b;
+  color: #699238;
+}
+/* line 70, ../sass/screen.scss */
+.block.teal {
+  background-color: #006b85;
+  color: #005064;
+}
+/* line 74, ../sass/screen.scss */
+.block.light-blue {
+  background-color: #83d2e4;
+  color: #83d2e4;
+}
+/* line 78, ../sass/screen.scss */
+.block.orange {
+  background-color: #eb8e2d;
+  color: #b06b22;
+}
+
+/* line 83, ../sass/screen.scss */
+.block * {
+  display: block;
+  z-index: 200 !important;
+  color: #333;
+  position: relative;
+}
+
+/* line 90, ../sass/screen.scss */
+.doubleheight {
+  height: 600px;
+}
+
+/* line 96, ../sass/screen.scss */
+h3 {
+  font-family: "TradeGothicW01-BoldCn20 675334", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* line 103, ../sass/screen.scss */
+h5 {
+  font-family: "TradeGothicW01-BoldCn20 675334", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* line 109, ../sass/screen.scss */
+p {
+  line-height: 1.2;
+}
+
+/* line 114, ../sass/screen.scss */
+.data {
+  margin-top: 50px;
+}
+/* line 116, ../sass/screen.scss */
+.data .data-left {
+  float: left;
+  width: 50%;
+}
+
+/* line 122, ../sass/screen.scss */
+a.blocklink .block:before {
+  content: " ";
+  display: block;
+  width: 1000px;
+  height: 1000px;
+  background-color: #ffcc00;
+  position: absolute;
+  bottom: -820px;
+  right: -820px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+/* line 137, ../sass/screen.scss */
+a.blocklink:hover .block:before {
+  transform: rotate(45deg);
+  bottom: -300px;
+  right: -300px;
+}

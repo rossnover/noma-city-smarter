@@ -1,0 +1,146 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=f7181dee-e55d-40c2-b8c1-65c5e1100405");
+
+@font-face{
+	font-family:"TradeGothicW01-BoldCn20 675334";
+	src:url("../fonts/5fdc935e-9e30-442a-bbe9-8d887b858471.woff") format("woff");
+}
+
+// FONTS
+$heading-font: 'TradeGothicW01-BoldCn20 675334', Helvetica, Arial, sans-serif;
+$text-font: Helvetica, Arial, sans-serif;
+
+// COLORS
+$light-blue: #83d2e4;
+$light-blue-text: #83d2e4;
+//
+$orange: #eb8e2d;
+$orange-text: #b06b22;
+//
+$green: #8cc24b;
+$green-text: #699238;
+//
+$teal: #006b85;
+$teal-text: #005064;
+
+*{
+	box-sizing: border-box;
+	z-index: 1;
+}
+html{
+	font-family: $text-font;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.large-1{
+	width: 25%;
+}
+.large-2{
+	width: 50%;
+}
+.large-3{
+	width: 75%;
+}
+.large-4{
+	width: 100%;
+}
+.specialblock{
+	height: 300px;
+	display: inline-block;
+	float: left;
+}
+.block{
+	position: relative;
+	height: 300px;
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	padding: 30px 3%;
+	&.green{
+		background-color: $green;
+		color: $green-text;
+	}
+	&.teal{
+		background-color: $teal;
+		color: $teal-text;
+	}
+	&.light-blue{
+		background-color: $light-blue;
+		color: $light-blue-text;
+	}
+	&.orange{
+		background-color: $orange;
+		color: $orange-text;
+	}
+}
+.block *{
+	display: block;
+	z-index: 200 !important;
+	color: #333;
+	position: relative;
+}
+
+.doubleheight{
+	height: 600px;
+}
+
+
+
+h3{
+	font-family: $heading-font;
+	font-size: 60px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h5{
+	font-family: $heading-font;
+	font-size: 60px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+p{
+	line-height: 1.2;
+}
+
+
+.data{
+	margin-top: 50px;
+	.data-left{
+		float: left;
+		width: 50%;
+	}
+}
+
+a.blocklink .block:before{
+	content:" ";
+	display: block;
+	width: 1000px;
+	height: 1000px;
+	background-color: #ffcc00;
+	position: absolute;
+	bottom: -820px;
+	right: -820px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    z-index: 100;
+	transition: all 0.5s;
+}
+a.blocklink:hover .block:before{
+	transform: rotate(45deg);
+	bottom: -300px;
+	right: -300px;
+
+}
+
+
+
+
