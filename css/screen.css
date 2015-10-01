@@ -72,131 +72,200 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "TradeGothicW01-BoldCn20 675334";
   src: url("../fonts/5fdc935e-9e30-442a-bbe9-8d887b858471.woff") format("woff");
 }
-/* line 32, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 * {
   box-sizing: border-box;
   z-index: 1;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 html {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
 }
+@media (max-width: 1340px) {
+  /* line 41, ../sass/screen.scss */
+  html {
+    font-size: 18px;
+  }
+}
+@media (max-width: 950px) {
+  /* line 41, ../sass/screen.scss */
+  html {
+    font-size: 16px;
+  }
+}
 
-/* line 42, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .large-1 {
   width: 25%;
 }
+@media (max-width: 950px) {
+  /* line 53, ../sass/screen.scss */
+  .large-1 {
+    width: 50%;
+  }
+}
 
-/* line 45, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .large-2 {
   width: 50%;
 }
+@media (max-width: 950px) {
+  /* line 59, ../sass/screen.scss */
+  .large-2 {
+    width: 100%;
+  }
+}
 
-/* line 48, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .large-3 {
   width: 75%;
 }
+@media (max-width: 950px) {
+  /* line 65, ../sass/screen.scss */
+  .large-3 {
+    width: 100%;
+  }
+}
 
-/* line 51, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .large-4 {
   width: 100%;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .specialblock {
-  height: 300px;
   display: inline-block;
   float: left;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .block {
   position: relative;
   height: 300px;
   display: inline-block;
   float: left;
   overflow: hidden;
-  padding: 30px 3%;
+  padding: 30px;
 }
-/* line 66, ../sass/screen.scss */
+@media (max-width: 1340px) {
+  /* line 78, ../sass/screen.scss */
+  .block {
+    padding: 20px;
+  }
+}
+@media (max-width: 950px) {
+  /* line 78, ../sass/screen.scss */
+  .block {
+    height: 300px;
+  }
+}
+/* line 91, ../sass/screen.scss */
 .block.green {
   background-color: #8cc24b;
   color: #699238;
 }
-/* line 70, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .block.teal {
   background-color: #006b85;
   color: #005064;
 }
-/* line 74, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .block.light-blue {
   background-color: #83d2e4;
-  color: #83d2e4;
+  color: #59a5b2;
 }
-/* line 78, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .block.orange {
   background-color: #eb8e2d;
   color: #b06b22;
 }
-
-/* line 83, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .block * {
   display: block;
-  z-index: 200 !important;
-  color: #333;
+  z-index: 200;
   position: relative;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .doubleheight {
   height: 600px;
 }
+@media (max-width: 950px) {
+  /* line 114, ../sass/screen.scss */
+  .doubleheight {
+    height: auto;
+  }
+}
 
-/* line 96, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
+h4 {
+  margin: 5px 0 30px;
+}
+
+/* line 126, ../sass/screen.scss */
+h3, h5 {
+  font-family: "TradeGothicW01-BoldCn20 675334", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+}
+
+/* line 139, ../sass/screen.scss */
 h3 {
-  font-family: "TradeGothicW01-BoldCn20 675334", Helvetica, Arial, sans-serif;
-  font-size: 60px;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: normal;
+  font-size: 80px;
+}
+@media (max-width: 1340px) {
+  /* line 139, ../sass/screen.scss */
+  h3 {
+    font-size: 60px;
+  }
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 h5 {
-  font-family: "TradeGothicW01-BoldCn20 675334", Helvetica, Arial, sans-serif;
   font-size: 60px;
-  text-transform: uppercase;
-  font-weight: normal;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 p {
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .data {
   margin-top: 50px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .data .data-left {
   float: left;
   width: 50%;
 }
+/* line 160, ../sass/screen.scss */
+.data h5 + p {
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
 
-/* line 122, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 a.blocklink .block:before {
   content: " ";
   display: block;
-  width: 1000px;
-  height: 1000px;
+  width: 3000px;
+  height: 3000px;
   background-color: #fff;
   position: absolute;
-  bottom: -820px;
-  right: -820px;
+  bottom: -2525px;
+  right: -2525px;
   -ms-transform: rotate(45deg);
   /* IE 9 */
   -webkit-transform: rotate(45deg);
@@ -206,9 +275,122 @@ a.blocklink .block:before {
   transition: all 0.5s;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
+a.blocklink:hover h3 {
+  transition: all 0.25s;
+  color: #333;
+}
+/* line 186, ../sass/screen.scss */
+a.blocklink:hover h5, a.blocklink:hover p {
+  color: #333;
+  transition: all 0.25s;
+}
+
+/* line 191, ../sass/screen.scss */
 a.blocklink:hover .block:before {
   transform: rotate(45deg);
-  bottom: -300px;
-  right: -300px;
+  bottom: -1500px;
+  right: -1500px;
+}
+
+/* line 198, ../sass/screen.scss */
+a .feature {
+  text-decoration: none;
+  transition: all 0.25s;
+}
+/* line 201, ../sass/screen.scss */
+a .feature:hover {
+  opacity: 0.75;
+}
+/* line 204, ../sass/screen.scss */
+a .feature p, a .feature h6 {
+  color: #fff;
+}
+/* line 207, ../sass/screen.scss */
+a .feature h6 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* line 218, ../sass/screen.scss */
+.work-smart {
+  padding: 0;
+}
+/* line 220, ../sass/screen.scss */
+.work-smart .data {
+  margin-top: 0;
+}
+
+/* line 224, ../sass/screen.scss */
+.section {
+  height: 300px;
+  padding: 30px;
+}
+@media (max-width: 950px) {
+  /* line 224, ../sass/screen.scss */
+  .section {
+    height: auto;
+  }
+}
+
+/* line 232, ../sass/screen.scss */
+.sign-up h3 {
+  margin-bottom: 30px;
+}
+/* line 235, ../sass/screen.scss */
+.sign-up p {
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* line 241, ../sass/screen.scss */
+.connect-with-us h3 {
+  margin-bottom: 30px;
+}
+/* line 244, ../sass/screen.scss */
+.connect-with-us ul {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+/* line 248, ../sass/screen.scss */
+.connect-with-us ul a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.25s;
+}
+/* line 252, ../sass/screen.scss */
+.connect-with-us ul a:hover {
+  opacity: 0.75;
+}
+/* line 257, ../sass/screen.scss */
+.connect-with-us ul li {
+  margin-bottom: 40px;
+}
+/* line 260, ../sass/screen.scss */
+.connect-with-us ul i, .connect-with-us ul i:before, .connect-with-us ul a {
+  display: inline-block;
+}
+/* line 263, ../sass/screen.scss */
+.connect-with-us ul i {
+  width: 50px;
+}
+/* line 266, ../sass/screen.scss */
+.connect-with-us ul .fa-envelope + a {
+  text-decoration: underline;
+}
+
+/* line 271, ../sass/screen.scss */
+.credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  width: 100%;
+  padding: 30px;
+}
+/* line 278, ../sass/screen.scss */
+.credit a {
+  display: inline-block;
+  color: #699238;
 }
