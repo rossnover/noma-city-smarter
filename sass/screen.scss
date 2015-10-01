@@ -285,10 +285,20 @@ a.blocklink:hover .block:before{
 	right: -1500px;
 }
 
+
+.media-features{
+		@media(max-width: $small-screen){
+		width: 100%;
+	}
+}
 a{
 	.feature{
 		text-decoration: none;
 		transition: all 0.25s;
+			@media(max-width: $small-screen){
+			width: 100%;
+		}
+		
 		&:hover{
 			opacity: 0.75;
 		}
