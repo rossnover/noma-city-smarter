@@ -328,7 +328,11 @@ a{
 		margin-top: 0;
 	}
 }
-.photo{
+.photo-1{
+	background: url(../img/middle-2-photo.jpg) center center no-repeat;
+	background-size: cover;
+}
+.photo-2{
 	background: url(../img/lower-1-photo.jpg) center center no-repeat;
 	background-size: cover;
 }
