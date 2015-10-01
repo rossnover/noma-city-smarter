@@ -105,7 +105,7 @@ html {
 @media (max-width: 950px) {
   /* line 54, ../sass/screen.scss */
   .large-1 {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -235,7 +235,7 @@ html {
 /* line 147, ../sass/screen.scss */
 .block.teal {
   background-color: #006b85;
-  color: #fff;
+  color: #005064;
 }
 /* line 151, ../sass/screen.scss */
 .block.light-blue {
@@ -337,23 +337,28 @@ p {
   line-height: 1.3;
 }
 
-/* line 221, ../sass/screen.scss */
-.data {
-  margin-top: 50px;
+/* line 219, ../sass/screen.scss */
+.small {
+  font-size: 14px;
 }
+
 /* line 223, ../sass/screen.scss */
+.data {
+  margin-top: 40px;
+}
+/* line 225, ../sass/screen.scss */
 .data .data-left {
   float: left;
   width: 50%;
 }
-/* line 227, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .data h5 + p {
   margin-top: 5px;
   margin-bottom: 45px;
 }
 
-/* line 233, ../sass/screen.scss */
-a.blocklink .block:before {
+/* line 235, ../sass/screen.scss */
+.blocklink .block:before {
   content: " ";
   display: block;
   width: 3000px;
@@ -371,184 +376,217 @@ a.blocklink .block:before {
   transition: all 0.5s;
 }
 
-/* line 249, ../sass/screen.scss */
-a.blocklink:hover h3, a.blocklink:hover h4, a.blocklink:hover h5, a.blocklink:hover p {
+/* line 251, ../sass/screen.scss */
+.blocklink:hover h3, .blocklink:hover h4, .blocklink:hover h5, .blocklink:hover p {
   transition: all 0.1s;
 }
-/* line 253, ../sass/screen.scss */
-a.blocklink:hover .green h3, a.blocklink:hover .green h4, a.blocklink:hover .green h5, a.blocklink:hover .green p {
+/* line 255, ../sass/screen.scss */
+.blocklink:hover .green h3, .blocklink:hover .green h4, .blocklink:hover .green h5, .blocklink:hover .green p {
   color: #8cc24b;
 }
-/* line 259, ../sass/screen.scss */
-a.blocklink:hover .teal h3, a.blocklink:hover .teal h4, a.blocklink:hover .teal h5, a.blocklink:hover .teal p {
+/* line 261, ../sass/screen.scss */
+.blocklink:hover .teal h3, .blocklink:hover .teal h4, .blocklink:hover .teal h5, .blocklink:hover .teal p {
   color: #006b85;
 }
-/* line 264, ../sass/screen.scss */
-a.blocklink:hover .orange h3, a.blocklink:hover .orange h4, a.blocklink:hover .orange h5, a.blocklink:hover .orange p {
+/* line 266, ../sass/screen.scss */
+.blocklink:hover .orange h3, .blocklink:hover .orange h4, .blocklink:hover .orange h5, .blocklink:hover .orange p, .blocklink:hover .orange a {
   color: #eb8e2d;
 }
-/* line 269, ../sass/screen.scss */
-a.blocklink:hover .light-blue h3, a.blocklink:hover .light-blue h4, a.blocklink:hover .light-blue h5, a.blocklink:hover .light-blue p {
+/* line 271, ../sass/screen.scss */
+.blocklink:hover .light-blue h3, .blocklink:hover .light-blue h4, .blocklink:hover .light-blue h5, .blocklink:hover .light-blue p {
   color: #83d2e4;
 }
-/* line 273, ../sass/screen.scss */
-a.blocklink:hover h3 {
+/* line 275, ../sass/screen.scss */
+.blocklink:hover h3 {
   transition: all 0.25s;
 }
-/* line 277, ../sass/screen.scss */
-a.blocklink:hover h5, a.blocklink:hover p {
+/* line 279, ../sass/screen.scss */
+.blocklink:hover h5, .blocklink:hover p {
   transition: all 0.25s;
 }
 
-/* line 282, ../sass/screen.scss */
-a.blocklink:hover .block:before {
+/* line 284, ../sass/screen.scss */
+.blocklink:hover .block:before {
   transform: rotate(45deg);
   bottom: -1500px;
   right: -1500px;
 }
 
 @media (max-width: 500px) {
-  /* line 289, ../sass/screen.scss */
+  /* line 291, ../sass/screen.scss */
   .media-features {
     width: 100%;
   }
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 a .feature {
   text-decoration: none;
   transition: all 0.25s;
 }
 @media (max-width: 500px) {
-  /* line 295, ../sass/screen.scss */
+  /* line 297, ../sass/screen.scss */
   a .feature {
     width: 100%;
   }
 }
-/* line 302, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 a .feature:hover {
   opacity: 0.75;
 }
-/* line 305, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 a .feature p {
   font-size: 16px;
 }
 @media (max-width: 500px) {
-  /* line 305, ../sass/screen.scss */
+  /* line 307, ../sass/screen.scss */
   a .feature p {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
-/* line 311, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 a .feature p, a .feature h6 {
   color: #fff;
 }
-/* line 314, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 a .feature h6 {
   font-weight: bold;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  /* line 316, ../sass/screen.scss */
+  a .feature h6 {
+    font-size: 24px;
+  }
+}
 
-/* line 325, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
+.intro p {
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  /* line 330, ../sass/screen.scss */
+  .intro p {
+    font-size: 20px;
+  }
+}
+
+/* line 336, ../sass/screen.scss */
 .work-smart {
   padding: 0;
 }
-/* line 327, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .work-smart .data {
   margin-top: 0;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .photo-1 {
   background: url(../img/middle-2-photo.jpg) center center no-repeat;
   background-size: cover;
 }
 
-/* line 335, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .photo-2 {
   background: url(../img/lower-1-photo.jpg) center center no-repeat;
   background-size: cover;
 }
 
-/* line 339, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .noma-today {
   background: url(../img/lower-1-photo2.jpg) center center no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 107, 133, 0.7);
 }
+/* line 354, ../sass/screen.scss */
+.noma-today h4 {
+  color: #fff;
+}
 
-/* line 344, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .section {
   height: 300px;
   padding: 30px;
 }
 @media (max-width: 950px) {
-  /* line 344, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
   .section {
     height: auto;
   }
 }
 
-/* line 351, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .sign-up {
   background: url(../img/lower-2-photo.jpg) center center no-repeat;
   background-size: cover;
   box-shadow: inset 1000px 0 0 0 rgba(235, 142, 45, 0.8);
 }
-/* line 352, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
+.sign-up a {
+  display: inline;
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.25s;
+}
+/* line 371, ../sass/screen.scss */
+.sign-up a:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+/* line 376, ../sass/screen.scss */
 .sign-up h3 {
   margin-bottom: 30px;
 }
-/* line 355, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .sign-up p {
   color: #fff;
   line-height: 1.4;
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .connect-with-us h3 {
   margin-bottom: 30px;
 }
-/* line 367, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .connect-with-us ul {
   font-size: 25px;
   font-weight: bold;
   color: #fff;
 }
-/* line 371, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .connect-with-us ul a {
   text-decoration: none;
   color: #fff;
   transition: all 0.25s;
 }
-/* line 375, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .connect-with-us ul a:hover {
   opacity: 0.75;
 }
-/* line 380, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .connect-with-us ul li {
   margin-bottom: 40px;
 }
-/* line 383, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .connect-with-us ul i, .connect-with-us ul i:before {
   display: inline-block;
 }
-/* line 386, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .connect-with-us ul a {
   display: inline;
 }
-/* line 389, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .connect-with-us ul i {
   width: 50px;
   height: 50px;
   float: left;
 }
-/* line 394, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .connect-with-us ul .fa-envelope + a {
   text-decoration: underline;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .credit {
   position: absolute;
   bottom: 0;
@@ -558,12 +596,12 @@ a .feature h6 {
   padding: 30px;
 }
 @media (max-width: 500px) {
-  /* line 399, ../sass/screen.scss */
+  /* line 423, ../sass/screen.scss */
   .credit {
     text-align: left;
   }
 }
-/* line 409, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .credit a {
   display: inline-block;
   color: #699238;

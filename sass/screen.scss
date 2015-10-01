@@ -54,7 +54,7 @@ html{
 .large-1{
 	width: 25%;
 	@media(max-width: $medium-screen){
-		width: 50%;
+		width: 100%;
 	}
 }
 .large-2{
@@ -146,7 +146,7 @@ html{
 	}
 	&.teal{
 		background-color: $teal;
-		color: #fff;
+		color: $teal-text;
 	}
 	&.light-blue{
 		background-color: $light-blue;
@@ -216,10 +216,12 @@ h5{
 p{
 	line-height: 1.3;
 }
-
+.small{
+	font-size: 14px;
+}
 
 .data{
-	margin-top: 50px;
+	margin-top: 40px;
 	.data-left{
 		float: left;
 		width: 50%;
@@ -230,7 +232,7 @@ p{
 	}
 }
 
-a.blocklink .block:before{
+.blocklink .block:before{
 	content:" ";
 	display: block;
 	width: 3000px;
@@ -245,7 +247,7 @@ a.blocklink .block:before{
 	z-index: 100;
 	transition: all 0.5s;
 }
-a.blocklink:hover {
+.blocklink:hover {
 	h3, h4, h5, p{
 		transition: all 0.1s;
 	}
@@ -261,7 +263,7 @@ a.blocklink:hover {
 		}
 	}
 	.orange{
-		h3, h4, h5, p{
+		h3, h4, h5, p, a{
 			color: $orange;
 		}
 	}
@@ -279,7 +281,7 @@ a.blocklink:hover {
 		transition: all 0.25s;
 	}
 }
-a.blocklink:hover .block:before{
+.blocklink:hover .block:before{
 	transform: rotate(45deg);
 	bottom: -1500px;
 	right: -1500px;
@@ -305,7 +307,7 @@ a{
 		p{
 			font-size: 16px;
 				@media(max-width: $small-screen){
-					font-size: 12px;
+					font-size: 18px;
 				}
 		}
 		p, h6{
@@ -314,6 +316,9 @@ a{
 		h6{
 			font-weight: bold;
 			margin-bottom: 20px;
+			@media(max-width: $small-screen){
+					font-size: 24px;
+			}
 		}
 
 	}
@@ -322,6 +327,12 @@ a{
 
 
 // VARIATIONS
+.intro p{
+	font-size: 24px;
+	@media(max-width: $small-screen){
+		font-size: 20px;
+	}
+}
 .work-smart{
 	padding: 0;
 	.data{
@@ -340,6 +351,9 @@ a{
 	background: url(../img/lower-1-photo2.jpg) center center no-repeat;
 	background-size: cover;
 	box-shadow: inset 0 0 0 1000px rgba(0, 107, 133, 0.7);
+	h4{
+		color: #fff;
+	}
 }
 .section{
 	height: 300px;
@@ -349,6 +363,16 @@ a{
 	}
 }
 .sign-up{
+	a{
+		display: inline;
+		color: #fff;
+		text-decoration: underline;
+		transition: all 0.25s;
+		&:hover{
+			text-decoration: none;
+			opacity: 0.75;
+		}
+	}
 	h3{
 		margin-bottom: 30px;
 	}
