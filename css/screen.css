@@ -192,7 +192,7 @@ html {
     bottom: -10px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 101, ../sass/screen.scss */
   #header .title h2 {
     font-size: 80px;
@@ -302,7 +302,7 @@ h2, h3 {
     font-size: 90px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 191, ../sass/screen.scss */
   h2, h3 {
     font-size: 60px;
@@ -325,7 +325,7 @@ h5 {
     font-size: 90px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 204, ../sass/screen.scss */
   h5 {
     font-size: 50px;
@@ -342,7 +342,7 @@ p {
 .small {
   font-size: 14px;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 220, ../sass/screen.scss */
   .small {
     font-size: 16px;
@@ -421,7 +421,7 @@ p {
   right: -1500px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 297, ../sass/screen.scss */
   .media-features {
     width: 100%;
@@ -433,7 +433,7 @@ a .feature {
   text-decoration: none;
   transition: all 0.25s;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 303, ../sass/screen.scss */
   a .feature {
     width: 100%;
@@ -447,7 +447,7 @@ a .feature:hover {
 a .feature p {
   font-size: 16px;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 313, ../sass/screen.scss */
   a .feature p {
     font-size: 18px;
@@ -462,7 +462,7 @@ a .feature h6 {
   font-weight: bold;
   margin-bottom: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 322, ../sass/screen.scss */
   a .feature h6 {
     font-size: 24px;
@@ -474,7 +474,7 @@ a .feature h6 {
   margin-top: 15px;
   font-size: 24px;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 336, ../sass/screen.scss */
   .intro .text p {
     font-size: 20px;
@@ -605,7 +605,7 @@ a .feature h6 {
   width: 100%;
   padding: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 430, ../sass/screen.scss */
   .credit {
     position: relative;
