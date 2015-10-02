@@ -210,7 +210,8 @@ h5{
 		font-size: 90px;
 	}
 	@media(max-width: $small-screen){
-		font-size: 60px;
+		font-size: 50px;
+		letter-spacing: 0px;
 	}
 }
 p{
@@ -218,6 +219,9 @@ p{
 }
 .small{
 	font-size: 14px;
+		@media(max-width: $small-screen){
+		font-size: 16px;
+		}
 }
 
 .data{
@@ -229,6 +233,7 @@ p{
 	h5 + p{
 		margin-top: 5px;
 		margin-bottom: 45px;
+		font-size: 14px;
 	}
 }
 
@@ -327,7 +332,8 @@ a{
 
 
 // VARIATIONS
-.intro p{
+.intro .text p{
+	margin-top: 15px;
 	font-size: 24px;
 	@media(max-width: $small-screen){
 		font-size: 20px;
@@ -389,7 +395,7 @@ a{
 		margin-bottom: 30px;
 	}
 	ul{
-		font-size: 25px;
+		font-size: 20px;
 		font-weight: bold;
 		color: #fff;
 		a{
@@ -411,7 +417,7 @@ a{
 			display: inline;
 		}
 		i{
-			width: 50px;
+			width: 35px;
 			height: 50px;
 			float: left;
 		}
@@ -428,7 +434,9 @@ a{
 	width: 100%;
 	padding: 30px;
 	@media(max-width: $small-screen){
+		position: relative;
 		text-align: left;
+		padding: 0;
 	}
 	a{
 		display: inline-block;
