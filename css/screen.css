@@ -326,6 +326,12 @@ html {
 .doubleheight {
   height: 600px;
 }
+@media (max-width: 550px) {
+  /* line 216, ../sass/screen.scss */
+  .doubleheight {
+    height: auto;
+  }
+}
 
 /* line 224, ../sass/screen.scss */
 h4 {
